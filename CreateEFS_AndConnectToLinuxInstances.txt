@@ -1,13 +1,16 @@
-Create EFS 
-Add Security group of Ec2 instaces to EFS Network Security Group 
+Create EFS on AWS
+Add Security group of Ec2 instaces to EFS Network Security Group. under networks open port 2049
 
 Create 2 Ec2 Instances Linux
-Same Security groups for both instances 
+Same Security groups for both instances open port 2049
 
 sudo su
 sudo yum install -y amazon-efs-utils
 sudo mkdir efs in both instances
 
+Go to AWS and select the efs select attach and connect via DNS run command on all instances not that AWS uses efs directory as default name that's why we used efs whie creating our directory but can be changed 
+
+(run all this codes for all instances)
 
 touch file1 file2 file3
 
